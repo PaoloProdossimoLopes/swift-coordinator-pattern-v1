@@ -10,7 +10,7 @@ import UIKit
 final class HomeViewController: UIViewController {
     
     private var viewModel: HomeViewModelProtocol { didSet{ viewModel.viewDelegate = self } }
-    private(set) lazy var homeView = HomeView(self)
+    private lazy var homeView = HomeView(self)
     
     init(viewModel: HomeViewModelProtocol) {
         self.viewModel = viewModel
